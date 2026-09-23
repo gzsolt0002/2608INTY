@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Nyomtatvanyinfo xmlns="https://soap.api.nav.gov.hu/external/webnyk/nyomtatvanyinfo/1.0" version="1.0">
+    <BoritekParameter>
+        <Kulcs>adoszam</Kulcs>
+        <Ertek>//Block_120001/FieldGroup_120002/Field_0A0001C001A</Ertek>
+    </BoritekParameter>
+    <BoritekParameter>
+        <Kulcs>adoazonosito</Kulcs>
+        <Ertek>//Block_120001/FieldGroup_120002/Field_0A0001C003A</Ertek>
+    </BoritekParameter>
+    <Nyomtatvanyinformacio>
+        <Adozo>
+            <Nev>if(string-length(normalize-space(concat(//Block_120001/FieldGroup_120002/Field_0A0001C005A, ' ', //Block_120001/FieldGroup_120002/Field_0A0001C006A, ' ', //Block_120001/FieldGroup_120002/Field_0A0001C007A))) &gt; 0) then concat(//Block_120001/FieldGroup_120002/Field_0A0001C005A, ' ', //Block_120001/FieldGroup_120002/Field_0A0001C006A, ' ', //Block_120001/FieldGroup_120002/Field_0A0001C007A) else //Block_120001/FieldGroup_120002/Field_0A0001C008A</Nev>
+            <Adoszam>//Block_120001/FieldGroup_120002/Field_0A0001C001A</Adoszam>
+            <Adoazonosito>//Block_120001/FieldGroup_120002/Field_0A0001C003A</Adoazonosito>
+        </Adozo>
+    </Nyomtatvanyinformacio>
+    <CsatolmanyInformacio>serialize(array {/*:Doc_2608INT/*[local-name() = ('Form_2608INTM')]/*[starts-with(local-name(), 'Attachment')]!map {"fileId":  string(fileId),"fileName":  string(fileName),"fileSize": xs:long(string(fileSize))}},map{"method":"json"} )</CsatolmanyInformacio>
+    <KrCimzett>NAV</KrCimzett>
+</Nyomtatvanyinfo>
